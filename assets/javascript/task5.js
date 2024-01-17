@@ -1,14 +1,16 @@
-const submit = document.getElementById("submit");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone"); // Corrected from "address"
-const address = document.getElementById("address"); // Corrected from "phone"
 
-// Add the event listener to the submit button
-submit.addEventListener("click", my_function);
 
-function my_function() {
+function my_function(event) {
+    const submit = document.getElementById("submit");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const address = document.getElementById("address");
     // Check name field
+
+
+    submit.addEventListener("click", my_function);
+
     if (name.value === '') {
         name.style.backgroundColor = "red";
     } else {
